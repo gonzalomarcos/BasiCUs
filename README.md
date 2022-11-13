@@ -16,6 +16,7 @@ https://redcanary.com/threat-detection-report/techniques/windows-management-inst
 
 ### Servers
 - Webshell detection
+  - sigma url in every UC
 - whoami as SYSTEM
 - Enumerate local groups 
 
