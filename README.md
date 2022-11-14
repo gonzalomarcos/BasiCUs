@@ -42,14 +42,15 @@ I have prioritized one log sources over others in order to create the UCs. Also 
 - whoami as SYSTEM
   - https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_whoami_as_system.yml
 - Enumerate local groups 
+  -  
 
 ### Endpoints
 - Multiple domain discovery commands
+  - 
 - Scheduled tasks
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_rare_schtasks_creations.yml
 - Office launching command
   - https://github.com/SigmaHQ/sigma/blob/1f8e37351e7c5d89ce7808391edaef34bd8db6c0/rules/windows/process_creation/proc_creation_win_office_shell.yml
-- Brute force login
 - Clear command history
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_event_log_cleared.yml
 
@@ -58,7 +59,9 @@ I have prioritized one log sources over others in order to create the UCs. Also 
 ### DCs/AD
 - Brute force
 - User added to admin groups
+  - 
 - Login outside jump servers
+  - 
 - Kerberoasting
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_susp_rc4_kerberos.yml
 
