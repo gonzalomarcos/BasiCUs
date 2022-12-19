@@ -14,7 +14,7 @@ I have split the environment in the following systems:
 - ATMs
   - ATMs use cases
 
-All these detection rules will try to look for common TTPs used by APTs. All the rules will have a link to check it's logic. 
+All these detection rules will try to look for common TTPs used by APTs. All the use cases will have a sigma link to check it's logic. 
 Checked most used TTPs to create the BasiCUs
 
 https://resource.redcanary.com/rs/003-YRU-314/images/2020-Threat-Detection-Report.pdf
@@ -23,7 +23,7 @@ https://redcanary.com/threat-detection-report/techniques/windows-management-inst
 
 ## Prioritization
 
-I have prioritized one log sources over others in order to create the UCs. Also I have take into account that in the same log source it can be different volumes of events, for example, I have prioritized any windows events over process creation in case it was possible since the volume of the proccess creation logs is bigger.
+I have prioritized one log sources over others in order to create the UCs. I have took into account that in the same log source it can be different volumes of events, for example, I have prioritized any windows events over process creation in case it was possible since the volume of the proccess creation logs is way bigger.
 
 
 
@@ -41,12 +41,10 @@ I have prioritized one log sources over others in order to create the UCs. Also 
   - https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_webshell_detection.yml
 - whoami as SYSTEM
   - https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_whoami_as_system.yml
-- Enumerate local groups 
-  -  
+- Enumerate local groups  
 
 ### Endpoints
 - Multiple domain discovery commands
-  - 
 - Scheduled tasks
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_rare_schtasks_creations.yml
 - Office launching command
@@ -59,9 +57,7 @@ I have prioritized one log sources over others in order to create the UCs. Also 
 ### DCs/AD
 - Brute force
 - User added to admin groups
-  - 
 - Login outside jump servers
-  - 
 - Kerberoasting
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_susp_rc4_kerberos.yml
 
