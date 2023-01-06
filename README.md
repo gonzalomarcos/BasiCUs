@@ -59,7 +59,7 @@ I have prioritized one log sources over others in order to create the UCs. I hav
 - Special user logon
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_admin_logon.yml
 - User added to admin groups
-- Login outside jump servers
+- Login outside jumpservers
   - https://github.com/gonzalomarcos/BasiCUs/blob/main/rules/win_security_ad_logon_outside_jumpservers.yml
 - Kerberoasting
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_susp_rc4_kerberos.yml
