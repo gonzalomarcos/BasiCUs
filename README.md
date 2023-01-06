@@ -30,9 +30,10 @@ I have prioritized one log sources over others in order to create the UCs. I hav
 ## Use Cases
 
 ### Core
-- AV detection hacktool (cleaned or not) [AV cheatsheet @FlorianRoth](https://www.nextron-systems.com/wp-content/uploads/2021/03/Antivirus_Event_Analysis_CheatSheet_1.8.1.pdf)
--  User added to local admin
+- AV detection hacktool (cleaned or not) [AV cheatsheet @FlorianRoth](https://www.nextron-systems.com/wp-content/uploads/2021/03/Antivirus_Event_Analysis_CheatSheet_1.8.1.pdf) 
+- User added to local admin
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_user_added_to_local_administrators.yml
+ 
 
 ### Servers
 - Webshell spawn
@@ -41,7 +42,8 @@ I have prioritized one log sources over others in order to create the UCs. I hav
   - https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_webshell_detection.yml
 - whoami as SYSTEM
   - https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_whoami_as_system.yml
-- Enumerate local groups  
+- Enumerate local groups 
+  - https://github.com/gonzalomarcos/BasiCUs/blob/main/rules/win_security_local_groups_enumeration.yml
 
 ### Endpoints
 - Multiple domain discovery commands
@@ -55,15 +57,17 @@ I have prioritized one log sources over others in order to create the UCs. I hav
 
 
 ### DCs/AD
-- Brute force
+- Special user logon
+  - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_admin_logon.yml
 - User added to admin groups
 - Login outside jump servers
+  - https://github.com/gonzalomarcos/BasiCUs/blob/main/rules/win_security_ad_logon_outside_jumpservers.yml
 - Kerberoasting
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_susp_rc4_kerberos.yml
 
 
 ### ATMs
 - Enumerate local groups
-  - Crear sigma
+  - https://github.com/gonzalomarcos/BasiCUs/blob/main/rules/win_security_local_groups_enumeration.yml
 - whoami executed
   - https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_susp_whoami.yml
