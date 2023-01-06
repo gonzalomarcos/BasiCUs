@@ -1,0 +1,22 @@
+title: User Logon Outside Jumpservers
+id: 763e8a68-058f-4e29-b261-d5523973673b
+status: experimental
+description: Detects logons outside jumpservers.
+references:
+    - https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4624
+author: Gonzalo Marcos
+date: 2021/08/10
+modified: 2022/10/22
+logsource:
+    service: security
+    product: windows
+detection:
+    selection:
+        EventID:
+            - 4624
+    filter_valid_ips:
+         IpAddress: set valid internal subnet or a list of a IPs
+    condition: selection and not filter_valid_ips
+falsepositives:
+    - Unknown
+level: low
