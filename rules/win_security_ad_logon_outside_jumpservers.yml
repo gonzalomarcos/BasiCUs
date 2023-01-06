@@ -19,7 +19,7 @@ detection:
         EventID:
             - 4624
     filter_valid_ips:
-         IpAddress: set valid internal subnet or a list of a IPs
+         IpAddress: set valid internal subnet or a list of IPs
     condition: selection and not filter_valid_ips
 falsepositives:
     - Unknown
