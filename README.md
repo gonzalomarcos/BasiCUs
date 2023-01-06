@@ -25,6 +25,20 @@ https://redcanary.com/threat-detection-report/techniques/windows-management-inst
 ## Prioritization
 
 Coger de MITRE los TTPs mas usados para ver como pillarlos
+| ![alt text](https://www.picussecurity.com/hubfs/logo-original.svg "Picus")  | ![alt text](https://www.crowdstrike.com/wp-content/themes/main-theme/images/logos/crowdstrike/RedLogoCS.svg "CrowdStrike")  | ![alt text](https://cms.recordedfuture.com/uploads/brand_logo_long_black_f2ead5b5c6.svg?w=1920 "Recorded Future") | ![alt text](https://avatars.githubusercontent.com/u/6877001?s=200&v=4 "Red Canary") | 
+| ------------- | ------------- | ------------- | ------------- |
+|Process Injection | Masquerading | Security Software Discovery | Process Injection| 
+|PowerShell | Command-line Interface | Obfuscated Files or Information | Scheduled Task| 
+|Credential Dumping | Credential Dumping | Process Injection | Windows Admin Shares| 
+|Masquerading | PowerShell | System Information Discovery | PowerShell| 
+|Command-line Interface | Hidden Files and Directories | Process Discovery | Remote File Copy| 
+|Scripting | Process Injection | Software Packing | Masquerading| 
+|Scheduled Task | Registry Run Keys / Startup Folder | DLL Side-Loading | Scripting| 
+|Registry Run Keys / Startup Folder | System Owner/User Discovery | Data Encrypted | DLL Search Order Hijacking| 
+|System Information Discovery | Account Discovery | Execution Through API | Domain Trust Recovery| 
+|Disabling Security Tools | Scripting | Standard Cryptographic Protocol | Disabling Security Tools | 
+
+[For more information about the Top 10 TTPs][1]
 
 ## Use Cases
 
@@ -69,3 +83,10 @@ Coger de MITRE los TTPs mas usados para ver como pillarlos
   - https://github.com/gonzalomarcos/BasiCUs/blob/main/rules/win_security_local_groups_enumeration.yml
 - whoami executed
   - https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_susp_whoami.yml
+
+
+
+
+
+
+[1]: https://www.picussecurity.com/resource/the-top-ten-mitre-attck-techniques
