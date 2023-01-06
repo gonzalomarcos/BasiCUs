@@ -46,7 +46,6 @@ I have prioritized one log sources over others in order to create the UCs. I hav
   - https://github.com/gonzalomarcos/BasiCUs/blob/main/rules/win_security_local_groups_enumeration.yml
 
 ### Endpoints
-- Multiple domain discovery commands
 - Scheduled tasks
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_rare_schtasks_creations.yml
 - Office launching command
