@@ -1,0 +1,24 @@
+title: Local Group Enumeration
+id: 451700e3-2f29-4271-9797-e832e2909a6c
+status: test
+description: Detects enumeration of local group/groups in a machine.
+references:
+    - http://www.stuffithoughtiknew.com/2019/02/detecting-bloodhound.html
+author: Gonzalo Marcos (@gonzalomarcos)
+date: 2020/05/16
+modified: 2022/10/09
+tags:
+    - attack.discovery
+    - attack.t1069.001
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID: 4799
+    filter:
+        - SubjectUserName|endswith: '$' # Exclude machine accounts
+    condition: selection and not filter
+falsepositives:
+    - Administrators or users checking permissions.
+level: medium
