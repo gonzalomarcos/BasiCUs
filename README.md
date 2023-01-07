@@ -35,6 +35,8 @@ Checked most used TTPs to create the BasiCUs
 
 [For more information about the Top 10 TTPs][1]
 
+Every top 10 has TTPs that would be detected with the following UCs 
+
 ## Use Cases
 
 ### Core
