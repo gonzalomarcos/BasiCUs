@@ -18,10 +18,6 @@ I have splited the UCs in the following environments:
 All these detection rules will try to look for common TTPs used by APTs. All the use cases will have a sigma link to check it's logic. 
 Checked most used TTPs to create the BasiCUs
 
-https://resource.redcanary.com/rs/003-YRU-314/images/2020-Threat-Detection-Report.pdf
-
-https://redcanary.com/threat-detection-report/techniques/windows-management-instrumentation/
-
 ## Prioritization
 
 | ![alt text](https://www.picussecurity.com/hubfs/logo-original.svg "Picus")  | ![alt text](https://www.crowdstrike.com/wp-content/themes/main-theme/images/logos/crowdstrike/RedLogoCS.svg "CrowdStrike")  | ![alt text](https://cms.recordedfuture.com/uploads/brand_logo_long_black_f2ead5b5c6.svg?w=1920 "Recorded Future") | ![alt text](https://avatars.githubusercontent.com/u/6877001?s=200&v=4 "Red Canary") | 
