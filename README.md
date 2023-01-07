@@ -67,6 +67,7 @@ Checked most used TTPs to create the BasiCUs
 - Special user logon
   - https://github.com/SigmaHQ/sigma/blob/8b749fb1260b92b9170e4e69fa1bd2f34e94d766/rules/windows/builtin/security/win_security_admin_logon.yml
 - User added to admin groups
+  - https://www.elastic.co/guide/en/security/7.17/user-added-to-privileged-group-in-active-directory.html
 - Login outside jumpservers
   - https://github.com/gonzalomarcos/BasiCUs/blob/main/rules/win_security_ad_logon_outside_jumpservers.yml
 - Kerberoasting
