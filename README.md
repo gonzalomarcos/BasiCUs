@@ -24,7 +24,6 @@ https://redcanary.com/threat-detection-report/techniques/windows-management-inst
 
 ## Prioritization
 
-Coger de MITRE los TTPs mas usados para ver como pillarlos
 | ![alt text](https://www.picussecurity.com/hubfs/logo-original.svg "Picus")  | ![alt text](https://www.crowdstrike.com/wp-content/themes/main-theme/images/logos/crowdstrike/RedLogoCS.svg "CrowdStrike")  | ![alt text](https://cms.recordedfuture.com/uploads/brand_logo_long_black_f2ead5b5c6.svg?w=1920 "Recorded Future") | ![alt text](https://avatars.githubusercontent.com/u/6877001?s=200&v=4 "Red Canary") | 
 | ------------- | ------------- | ------------- | ------------- |
 |Process Injection | Masquerading | Security Software Discovery | Process Injection| 
